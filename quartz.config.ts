@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "tGIoS Wiki",
+    pageTitle: "Grand Hazard Wiki",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
