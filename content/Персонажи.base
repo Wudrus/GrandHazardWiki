@@ -1,0 +1,29 @@
+properties:
+  file.name:
+    displayName: Имя
+  file.tags:
+    displayName: Теги
+views:
+  - type: cards
+    name: Таблица
+    filters:
+      and:
+        - file.hasProperty("Персонаж")
+    order:
+      - file.name
+      - Персонаж
+      - Антипод
+      - Роль
+    sort:
+      - property: Персонаж
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: file.tags
+        direction: DESC
+    columnSize:
+      note.Персонаж: 126
+    cardSize: 180
+    image: note.Портрет
+    imageAspectRatio: 1.5
+    imageFit: contain
